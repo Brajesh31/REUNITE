@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <link rel="stylesheet" href="/css/eventSuccess.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+        /* Add custom styles for your registration success page */
+        body {
+            background-color: #775151;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    
+        .mainBody {
+            background-color: #baa3a3;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    
+        #tickMark {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+        }
+    
+        #mainBox {
+            padding: 20px;
+        }
+    
+        #mainBoxHeading h1 {
+            color: #3498db;
+        }
+    
+        #mainBoxText {
+            margin-top: 20px;
+        }
+    
+        p {
+            color: #333;
+        }
+    
+        .backToHome {
+            display: inline-block;
+            margin-top: 10px;
+            color: #1f91dd;
+            text-decoration: none;
+        }
+    
+        .backToHome:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainBody">
+        <lottie-player id="tickMark" src="/images/icons/icon.json" mode="normal" background="transparent" speed="1"
+            style="width: 300px; height: 300px;" autoplay></lottie-player>
+        <div class="mainBox" id="mainBox">
+            <div class="logo" id="csalogobox">
+                <!-- <img id="csalogo" src="/img/favicon/favicon.avif" alt="CSA Logo"> -->
+            </div>
+            <div class="heading" id="mainBoxHeading">
+                <h1>Thank you!</h1>
+            </div>
+            <div class="textBox" id="mainBoxText">
+                <p>Your response has been recorded!</p>
+                <a class="backToHome" id="backToHome">Back To Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/tick.js"></script>
+    <script src="/js/eventSuccess.js"></script>
+
+</body>
+
+</html>

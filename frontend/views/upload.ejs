@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/upload.css">
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="content">
+            <div class="detail-box">
+                <div class="detail-box-heading">
+                    <h2>UPLOAD ITEM</h2>
+                </div>
+                <form action="http://localhost:3000/uploads/upload" method="post" class="form upload-form"
+                    enctype="multipart/form-data">
+                    <input type="text" name="itemName" id="itemName" placeholder="Item Name" required>
+    
+                    <div class="image-upload">
+                        <div class="image-preview"></div>
+                        <input type="file" id="imageUpload" name="image" required>
+                        <label for="imageUpload" class="image-upload-label">Upload Image</label>
+                    </div>
+    
+                    <textarea name="description" id="description" placeholder="Description" rows="5" required></textarea>
+    
+                    <input type="text" name="location" id="location" placeholder="Location" required>
+    
+                    <!-- Additional Fields -->
+                    <input type="number" name="quantity" id="quantity" placeholder="Quantity" required>
+                    <input type="text" name="category" id="category" placeholder="Category" required>
+                    <input type="number" name="price" id="price" placeholder="Price" required>
+                    <input type="date" name="expirationDate" id="expirationDate" required>
+    
+                    <!-- Submit Button -->
+                    <button type="submit">UPLOAD</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="/js/upload.js"></script>
+
+</body>
+
+</html>

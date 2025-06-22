@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+    position: absolute;
+    z-index: 999;
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #1e1e1e;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.mainBody {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+    background-color: white;
+}
+
+.mainBox {
+    height: 50rem;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+    border-radius: 5px;
+    display: none;
+}
+
+#csalogobox,
+#mainBoxHeading,
+#mainBoxText,
+#backToHome {
+    display: none;
+    opacity: 0;
+}
+
+.popup {
+    animation: popup 500ms;
+}
+
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo img {
+    height: 18rem;
+    width: 18rem;
+    z-index: 1000;
+}
+
+.tickMarkAnimation {
+    animation: tickMark 500ms ease;
+}
+
+@keyframes tickMark {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+}
+
+.logoAnimation {
+    animation: logoAnime 1000ms ease;
+}
+
+@keyframes logoAnime {
+    0% {
+        transform: rotate3d(0, -1, 0, -90deg);
+    }
+
+    100% {
+        transform: rotate3d(0, -1, 0, 0deg);
+    }
+}
+
+.textBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textBox p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.backToHome {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    font-weight: 600;
+    animation: fadein 1s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(178, 216, 248);
+}
+
+.backToHome:hover {
+    background-color: aliceblue;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.insta{
+    color: #0c76ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media (max-width: 500px) {
+
+    .mainBody {
+        height: 100dvh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Montserrat, sans-serif;
+        background-color: aliceblue;
+    }
+
+    .mainBox {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .logo img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .mainBox h1 {
+        font-size: 1.4rem;
+    }
+
+    .textBox p {
+        font-size: 1rem;
+    }
+
+    .textBox a {
+        font-size: 1rem;
+    }
+}
+
+/* User Notification */
+.notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.notification-text {
+    margin: 0;
+}

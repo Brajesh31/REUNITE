@@ -1,0 +1,130 @@
+body {
+    background-color: #1B1E23;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.custom-line {
+    margin: 0.5rem 0;
+    width: 80px;
+    height: 2px;
+    background-color: white;
+}
+
+.content {
+    width: 100%;
+    max-width: 30rem;
+    margin-top: 2rem;
+}
+
+.detail-box {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.detail-box-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem;
+    text-align: center;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.upload-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.upload-form input[type="text"],
+.upload-form textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    resize: none;
+    width: 24rem;
+}
+
+.upload-form input[type="text"]:focus,
+.upload-form textarea:focus {
+    outline: none;
+}
+
+.upload-form .image-upload {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.upload-form .image-preview {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.upload-form .image-preview img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.upload-form .image-preview.active img {
+    display: block;
+}
+
+.upload-form input[type="file"] {
+    display: none;
+}
+
+.upload-form .image-upload-label {
+    background-color: #1B1E23;
+    color: #fff;
+    padding: 0.5rem 3rem;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+}
+
+.upload-form .image-upload-label:hover {
+    background-color: #333;
+}
+
+.upload-form button {
+    background-color: #1B1E23;
+    border: none;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 1rem;
+}

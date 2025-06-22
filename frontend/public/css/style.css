@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #1B1E23;
+    font-family: 'Inter', sans-serif;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+}
+
+.main-heading h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.custom-line {
+    margin: 0.5rem 0;
+    width: 80px;
+    height: 2px;
+    background-color: white;
+}
+
+.content {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.detail-box {
+    width: 24rem;
+    margin: 0 2rem;
+    height: 50vh;
+    min-height: 28rem;
+    background-color: rgba(255, 255, 255);
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.detail-box-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 5rem 0 4rem 0;
+}
+
+.form {
+    width: 82%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    padding: 1.1rem;
+}
+
+.form input {
+    width: 81%;
+    min-width: 0rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.51rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.form input:focus,
+input:active {
+    outline: none;
+    background-color: white;
+}
+
+.form button {
+    background-color: #1B1E23;
+    border: none;
+    color: #fff;
+    padding: 0.8rem 3rem;
+    border-radius: 5px;
+    font-weight: 601;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.cautionlogo {
+    position: absolute;
+    height: 1.5rem;
+    right: 18%;
+    bottom: 29.5%;
+    display: none;
+}
+
+.errors {
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    text-align: center;
+    top: 5.9rem;
+    position: absolute;
+}
+
+.redirect-page {
+    margin: 0.10rem 0;
+    font-weight: 600;
+}
+
+.redirect-page a{
+    color: rgb(33, 152, 249);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1B1E23;
+            color: rgb(226, 197, 197);
+        }
+
+        .main-div {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner-div {
+            width: 30rem;
+            height: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #3E64FF; /* Changed background color */
+            border-radius: 18px;
+            color: black;
+        }
+
+        .main-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="inner-div">
+            <div class="main-heading">
+                <%= locals.heading %>
+            </div>
+            <div class="main-body">
+                <%= locals.body %>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

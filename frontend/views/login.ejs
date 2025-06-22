@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+<style>
+    /* Add custom styles for your login page */
+    body {
+        /* background-color: #f0f0f0; */
+        font-family: Arial, sans-serif;
+    }
+
+    .main-div {
+        /* background-color: #fff; */
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-heading {
+        text-align: center;
+    }
+
+    h1 {
+        color: #5d6164;
+    }
+
+    .custom-line {
+        background-color: #2c84bf;
+        height: 3px;
+        border: none;
+        margin: 10px auto;
+    }
+
+    .detail-box {
+        padding: 20px;
+    }
+
+    .detail-box-heading {
+        text-align: center;
+    }
+
+    h2 {
+        color: #474141;
+    }
+
+    .form {
+        text-align: center;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #1e6eb0;
+    }
+
+    .redirect-page {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    a {
+        color: #3498db;
+        text-decoration: none;
+    }
+
+    .error-message {
+        color: rgb(111, 65, 73);
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="main-heading">
+            <h1>REUNITE</h1>
+            <hr class="custom-line">
+        </div>
+        <div class="content">
+            <div class="detail-box">
+                <div class="detail-box-heading">
+                    <h2>LOGIN</h2>
+                </div>
+                <form action="http://localhost:3000/user/login" method="post" class="form" id="loginForm">
+                    <input type="email" name="email" id="email" placeholder="EMAIL" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <input type="password" name="password" id="password" placeholder="PASSWORD" required>
+                    <!-- Paste the "Remember Me" checkbox code here -->
+                    <label>
+                        <input type="checkbox" name="rememberMe" id="rememberMe">
+                        <span>Remember Me</span>
+                    </label>
+                    <!-- End of "Remember Me" checkbox code -->
+                    <button type="submit">LOGIN</button>
+                    <div class="redirect-page">New user? <a href="/register">Register</a></div>
+                    <div class="error-message" id="errorMessage"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

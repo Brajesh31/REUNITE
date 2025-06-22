@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: backend
+      dockerfile: Dockerfile # Path to the directory containing the backend Dockerfile
+    ports:
+      - 3000:3000 # Forward host port 3000 to container port 3000
+
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile # Path to the directory containing the frontend Dockerfile
+    ports:
+      - 4000:4000 # Forward host port 4000 to container port 4000

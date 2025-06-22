@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  background-color: #1B1E23;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+/* Styles for the header */
+header {
+  color: rgb(246, 246, 246);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles for the main container */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styles for individual item div */
+.item {
+  width: 200.1px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+/* Styles for item image */
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles for item name */
+.item h2 {
+  font-size: 18.1px;
+  margin: 10px 0;
+}
+
+/* Styles for item description */
+.item p {
+  font-size: 14.1px;
+  margin: 11px 0;
+}
+
+/* Styles for image container */
+#image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styles for individual image */
+#image-container img {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+}
+
+.addButton {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  font-size: 16px;
+  width: 8rem;
+  cursor: pointer;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 5px;
+  bottom: 0rem;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.addButton p{
+  text-decoration: none;
+}
+
+
+svg {
+  width: 256px;
+  height: 256px;
+}
+
+/* SMOKE */
+#smoke-1 {
+  stroke-dasharray: 0, 10;
+  animation: smoke 6s ease infinite;
+}
+
+#smoke-2 {
+  stroke-dasharray: 0, 10;
+  animation: smoke 6s 0.5s ease infinite;
+}
+
+@keyframes smoke {
+  0% { stroke-dasharray: 0, 10; }
+  50% { stroke-dasharray: 10, 0; }
+  100% { stroke-dasharray: 10, 0; opacity: 0; }
+}
+
+/* WRITING */
+#line-1 {
+  opacity: 0;
+  animation: writing 0.5s linear forwards;
+}
+
+#line-2 {
+  opacity: 0;
+  animation: writing 0.5s 1s linear forwards;
+}
+
+#line-3 {
+  opacity: 0;
+  animation: writing 0.5s 1.5s linear forwards;
+}
+
+#line-4 {
+  opacity: 0;
+  animation: writing 0.5s 2s linear forwards;
+}
+
+@keyframes writing {
+  0% { width: 0px; opacity: 1;}
+  100% { width: 14px; opacity: 1;}
+}
+
